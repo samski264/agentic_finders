@@ -1,0 +1,8 @@
+node_modules/
+.env
+# données runtime (générées par le scoring) — pas dans git
+shortlist.csv
+scored.json
+enrichis.json
+*.log
+.DS_Store
