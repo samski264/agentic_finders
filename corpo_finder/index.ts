@@ -4,7 +4,7 @@ import Parallel from "parallel-web";
 const client = new Parallel({ apiKey: process.env.PARALLEL_API_KEY });
 
 const RESULTS_FILE = "results.json";
-const ADDITIONAL_MATCH_LIMIT = 25;
+const ADDITIONAL_MATCH_LIMIT = 50;
 
 const OBJECTIVE =
   "FindAll software companies in Switzerland, France or the Benelux (Belgium, Netherlands, Luxembourg) where product, design and engineering are tightly coupled and a generalist product engineer ships end-to-end. Strong fit: teams building web apps, AI products (LLM, embeddings, semantic search), 3D / WebGL / real-time / spatial / VR experiences, creative or design tooling, no-code/visual builders, or developer tooling, on a modern TypeScript stack (Next.js, React, Three.js, Node). Include early-stage and growth-stage startups across all funding stages, prioritizing small teams where one person owns a feature from interface to infrastructure.";

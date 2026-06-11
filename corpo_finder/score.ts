@@ -10,9 +10,12 @@
  *         tier 1 (4-5) / 2 (3). Pur, déterministe, testable.
  *
  * Usage :
- *   node score.ts --in enrichis.json [--out scored.json] [--keep-only]
+ *   node score.ts --in enrichis.json [--out scored.json] [--keep-only] [--min N]
  *   cat enrichis.json | node score.ts
  *   node score.ts --self-test
+ *
+ * --min N : seuil de garde (défaut 3). Baisser à 2 = shortlist plus large.
+ *           tier 1 = score >=4, tier 2 = score dans [N..3].
  */
 import { readFile, writeFile } from "node:fs/promises";
 
@@ -47,7 +50,7 @@ const CRITERIA = [
   "decideur_joignable",
   "signal_frais",
 ] as const;
-const KEEP_THRESHOLD = 3;
+let KEEP_THRESHOLD = 3; // réglable via --min N (défaut 3)
 
 /** gates explicites prioritaires ; sinon mappe zone/produit depuis le JSON findall. */
 function deriveGates(c: Candidate): Gates {
@@ -71,7 +74,7 @@ function computeScore(c: Candidate): number {
 }
 
 const tierFor = (score: number): number | null =>
-  score >= 4 ? 1 : score === KEEP_THRESHOLD ? 2 : null;
+  score >= 4 ? 1 : score >= KEEP_THRESHOLD ? 2 : null;
 
 /** Évalue un candidat. Ne mute pas l'entrée. */
 export function evaluate(c: Candidate): Scored {
@@ -151,6 +154,9 @@ async function readStdin(): Promise<string> {
 if (has("--self-test")) {
   process.exit(selfTest());
 }
+
+const minFlag = flag("--min");
+if (minFlag !== undefined) KEEP_THRESHOLD = Math.max(1, Number(minFlag));
 
 const inPath = flag("--in");
 const raw = inPath ? await readFile(inPath, "utf8") : await readStdin();

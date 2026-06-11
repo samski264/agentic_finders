@@ -1,0 +1,15 @@
+{
+  "name": "position-finder",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "node --env-file=.env index.ts",
+    "score": "node score.ts",
+    "shortlist": "node shortlist.ts",
+    "pipe": "node score.ts && node shortlist.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^25.9.2"
+  }
+}

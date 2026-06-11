@@ -1,0 +1,242 @@
+[
+  {
+    "name": "nunu.ai",
+    "url": "https://nunu.ai/",
+    "city": "Zurich",
+    "score": 5,
+    "tier": 1,
+    "source": "https://nunu.ai/",
+    "criteria": {
+      "produit_pertinent": 1,
+      "culture_builder": 1,
+      "stack_match": 1,
+      "decideur_joignable": 1,
+      "signal_frais": 1
+    },
+    "signal_why": "Levé $6M en Seed (annoncé début 2025/mars 2025 selon les sources), ce qui est un signal frais (<60j par rapport à la date actuelle simulée ou récent)."
+  },
+  {
+    "name": "LogicStar AI",
+    "url": "https://logicstar.ai/",
+    "city": "Zurich",
+    "score": 5,
+    "tier": 1,
+    "source": "https://logicstar.ai/",
+    "criteria": {
+      "produit_pertinent": 1,
+      "culture_builder": 1,
+      "stack_match": 1,
+      "decideur_joignable": 1,
+      "signal_frais": 1
+    },
+    "signal_why": "Levé $3M en février 2025 (très frais) et annonce explicite 'currently hiring'."
+  },
+  {
+    "name": "POWER.XYZ",
+    "url": "https://power.xyz/",
+    "city": null,
+    "score": 4,
+    "tier": 1,
+    "source": "https://power.xyz/",
+    "criteria": {
+      "produit_pertinent": 1,
+      "culture_builder": 1,
+      "stack_match": 1,
+      "decideur_joignable": 0,
+      "signal_frais": 1
+    },
+    "signal_why": "L'existence d'une offre d'emploi active 'Front-end Developer' sur le site indique un besoin de recrutement récent."
+  },
+  {
+    "name": "2501.ai",
+    "url": "https://www.2501.ai/",
+    "city": "Paris",
+    "score": 4,
+    "tier": 1,
+    "source": "https://www.2501.ai/",
+    "criteria": {
+      "produit_pertinent": 1,
+      "culture_builder": 1,
+      "stack_match": 0,
+      "decideur_joignable": 1,
+      "signal_frais": 1
+    },
+    "signal_why": "L'entreprise a été fondée en 2024 et est très récente. Le statut de startup seed/fondation constitue un signal frais par défaut."
+  },
+  {
+    "name": "GLBNXT",
+    "url": "https://www.glbnxt.com/",
+    "city": "Netherlands",
+    "score": 4,
+    "tier": 1,
+    "source": "https://www.glbnxt.com/",
+    "criteria": {
+      "produit_pertinent": 1,
+      "culture_builder": 1,
+      "stack_match": 1,
+      "decideur_joignable": 0,
+      "signal_frais": 1
+    },
+    "signal_why": "Lancement officiel récent ('officially launches today') et mention de croissance à $330k, indiquant une activité fraîche et un stade précoce."
+  },
+  {
+    "name": "Pixyle.ai",
+    "url": "https://www.pixyle.ai/",
+    "city": "Amsterdam",
+    "score": 4,
+    "tier": 1,
+    "source": "https://www.pixyle.ai/",
+    "criteria": {
+      "produit_pertinent": 1,
+      "culture_builder": 1,
+      "stack_match": 1,
+      "decideur_joignable": 0,
+      "signal_frais": 1
+    },
+    "signal_why": "Preuve d'une levée de fonds récente ('grabs 1m') dans les sources collectées, indiquant une activité de recrutement ou de scaling active."
+  },
+  {
+    "name": "Framer, Netherlands",
+    "url": null,
+    "city": "Amsterdam",
+    "score": 4,
+    "tier": 1,
+    "source": null,
+    "criteria": {
+      "produit_pertinent": 1,
+      "culture_builder": 1,
+      "stack_match": 1,
+      "decideur_joignable": 0,
+      "signal_frais": 1
+    },
+    "signal_why": "Framer a levé des fonds récemment (Série B en 2023, Série C en 2024) et recrute activement. Le poste de 'Product Engineer' est récurrent et pertinent."
+  },
+  {
+    "name": "HEGIAS",
+    "url": "https://www.hegias.com/",
+    "city": "Rothenthurm",
+    "score": 3,
+    "tier": 2,
+    "source": "https://www.hegias.com/",
+    "criteria": {
+      "produit_pertinent": 1,
+      "culture_builder": 1,
+      "stack_match": 1,
+      "decideur_joignable": 0,
+      "signal_frais": 0
+    },
+    "signal_why": "Les données indiquent un stade Seed/Zurich mais aucune date de levée récente (<60j) ou d'ouverture de poste spécifique n'est fournie dans les preuves."
+  },
+  {
+    "name": "LiteRev",
+    "url": "https://ch.linkedin.com/company/literev",
+    "city": "Geneva",
+    "score": 3,
+    "tier": 2,
+    "source": "https://ch.linkedin.com/company/literev",
+    "criteria": {
+      "produit_pertinent": 1,
+      "culture_builder": 1,
+      "stack_match": 1,
+      "decideur_joignable": 0,
+      "signal_frais": 0
+    },
+    "signal_why": "Aucune information sur une levée de fonds récente (<60j) ou un poste ouvert récent dans les données fournies."
+  },
+  {
+    "name": "irmos technologies AG",
+    "url": "https://www.irmos-tech.com/",
+    "city": "Zurich",
+    "score": 3,
+    "tier": 2,
+    "source": "https://www.irmos-tech.com/",
+    "criteria": {
+      "produit_pertinent": 1,
+      "culture_builder": 1,
+      "stack_match": 0,
+      "decideur_joignable": 1,
+      "signal_frais": 0
+    },
+    "signal_why": "La source indique que l'entreprise est 'fully bootstrapped to date' (autofinancée) et n'a pas de levée de fonds récente mentionnée dans les extraits fournis. Aucun poste ouvert récent n'est attesté par une source fiable (<60j)."
+  },
+  {
+    "name": "Vertical Data AG",
+    "url": "https://www.swissmadesoftware.org/en/companies/vertical-data-ag/home.html",
+    "city": "Bern",
+    "score": 3,
+    "tier": 2,
+    "source": "https://www.swissmadesoftware.org/en/companies/vertical-data-ag/home.html",
+    "criteria": {
+      "produit_pertinent": 1,
+      "culture_builder": 1,
+      "stack_match": 1,
+      "decideur_joignable": 0,
+      "signal_frais": 0
+    },
+    "signal_why": "La description indique la date de fondation (2023) mais ne mentionne aucune levée de fonds récente ni ouverture de poste datée de moins de 60 jours. L'information est trop ancienne/générale pour valider un signal frais."
+  },
+  {
+    "name": "Advertima",
+    "url": "https://advertima.com/",
+    "city": "St. Gallen",
+    "score": 2,
+    "tier": 2,
+    "source": "https://advertima.com/",
+    "criteria": {
+      "produit_pertinent": 1,
+      "culture_builder": 1,
+      "stack_match": 0,
+      "decideur_joignable": 0,
+      "signal_frais": 0
+    },
+    "signal_why": "Aucune levée de fonds récente (<60j) ou offre d'emploi explicite trouvée dans les sources. La société est active mais pas de signal frais immédiat."
+  },
+  {
+    "name": "Forest Admin",
+    "url": null,
+    "city": "Paris",
+    "score": 2,
+    "tier": 2,
+    "source": null,
+    "criteria": {
+      "produit_pertinent": 1,
+      "culture_builder": 0,
+      "stack_match": 1,
+      "decideur_joignable": 0,
+      "signal_frais": 0
+    },
+    "signal_why": "Pas de levée récente (<60j) ni d'annonce de poste critique ouverte récemment détectée dans les sources fournies. L'entreprise est stable mais ne montre pas le 'fresh signal' requis pour un candidat early-stage."
+  },
+  {
+    "name": "Pickit 3D",
+    "url": "https://www.pickit3d.com/",
+    "city": "Leuven",
+    "score": 2,
+    "tier": 2,
+    "source": "https://www.pickit3d.com/",
+    "criteria": {
+      "produit_pertinent": 1,
+      "culture_builder": 0,
+      "stack_match": 1,
+      "decideur_joignable": 0,
+      "signal_frais": 0
+    },
+    "signal_why": "Pas de levée récente (<60j) ni d'annonce de poste ouverte identifiée dans les sources fournies. La dernière info majeure date de 2024 (version 3.4)."
+  },
+  {
+    "name": "Ontoforce",
+    "url": "https://www.ontoforce.com/",
+    "city": "Ghent",
+    "score": 2,
+    "tier": 2,
+    "source": "https://www.ontoforce.com/",
+    "criteria": {
+      "produit_pertinent": 1,
+      "culture_builder": 0,
+      "stack_match": 1,
+      "decideur_joignable": 0,
+      "signal_frais": 0
+    },
+    "signal_why": "Aucune information sur une levée de fonds récente (<60j) ou un poste ouvert récent dans les preuves. L'entreprise est active mais sans signal d'embauche urgent détecté."
+  }
+]

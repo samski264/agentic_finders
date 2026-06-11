@@ -75,6 +75,28 @@ function parseCsv(text: string): Record<string, string>[] {
   return rows.slice(1).map((r) => Object.fromEntries(header.map((h, i) => [h, r[i] ?? ""])));
 }
 
+/** Objet structuré (typé) à partir d'une ligne CSV : pratique à consommer par un programme. */
+function rowToObject(r: Row) {
+  const num = (v: string): number | null => (v === "" || v == null ? null : Number(v));
+  const bit = (v: string): 0 | 1 => (r[v as keyof Row] === "1" ? 1 : 0);
+  return {
+    name: r.name,
+    url: r.url || null,
+    city: r.city || null,
+    score: num(r.score),
+    tier: num(r.tier),
+    source: r.source || null,
+    criteria: {
+      produit_pertinent: bit("produit_pertinent"),
+      culture_builder: bit("culture_builder"),
+      stack_match: bit("stack_match"),
+      decideur_joignable: bit("decideur_joignable"),
+      signal_frais: bit("signal_frais"),
+    },
+    signal_why: r.signal_why || null,
+  };
+}
+
 function toRow(c: Candidate): Row {
   const crit = c.criteria ?? {};
   const val = (k: string) => String(crit[k]?.value ?? 0);
@@ -132,6 +154,7 @@ async function readStdin(): Promise<string> {
 
 const inPath = flag("--in");
 const csvPath = flag("--csv") ?? "shortlist.csv";
+const jsonPath = has("--json") ? (flag("--json") ?? csvPath.replace(/\.csv$/i, ".json")) : undefined;
 const dryRun = has("--dry-run");
 
 const data = JSON.parse(inPath ? await readFile(inPath, "utf8") : await readStdin());
@@ -158,5 +181,9 @@ if (dryRun) {
   );
   await writeFile(csvPath, writeCsv(all), "utf8");
   console.error(`OK -> ${csvPath} | +${neu.length} nouvelle(s) | ${all.length} au total.`);
+  if (jsonPath) {
+    await writeFile(jsonPath, JSON.stringify(all.map(rowToObject), null, 2), "utf8");
+    console.error(`OK -> ${jsonPath} | ${all.length} entr\u00e9es (JSON structur\u00e9).`);
+  }
   report(neu);
 }
